@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int a,b;
+	float a,b,c;
 	printf("Enter the 1st value A= ");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Enter the 2nd value B= ");
-	scanf("%d",&b);
-	int c=b;
+	scanf("%f",&b);
+	c=b;
 	b=a;
 	a=c;
-	printf("After swap,value of A=%d\n",a);
-	printf("After swap,value of B=%d\n",b);
-	
+	printf("After swap,value of A= %.f\n",a);
+	printf("After swap,value of B= %.f\n",b);
 	return 0;
 }
