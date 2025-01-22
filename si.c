@@ -1,15 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int p,t,si;
-	float r;
-	printf("Enter the value of principal amt ");
-	scanf("%d",&p);
-	printf("Enter the value of time period ");
-	scanf("%d",&t);
-	printf("Enter the value of rate of interest ");
+	float p,t,si,r;	
+	printf("Enter the value of principal amount: ");
+	scanf("%f",&p);
+	printf("Enter the Time Period: ");
+	scanf("%f",&t);
+	printf("Enter the rate of interest ");
 	scanf("%f",&r);
 	si=(p*r*t)/100;
-	printf("The value of the si is = %d",si);
+	printf("The value of the Simpleinterest is = %.f\n",si);
 	return 0;
 }
