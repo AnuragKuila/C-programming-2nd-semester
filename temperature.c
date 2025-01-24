@@ -10,6 +10,6 @@ int main()
    scanf("%f",&f2);
    c1=(f2-32)*5/9;
     printf("Temperature in celsius is: %.2f\n",c1);
-    return (0);  
+    return 0;  
     }
     
