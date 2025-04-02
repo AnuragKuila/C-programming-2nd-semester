@@ -1,26 +1,16 @@
-#include <stdio.h>
-
-int main() {
-    int n;
-    
-
-    // Input size of the array
-    printf("Enter the size of the array: ");
-    scanf("%d", &n);
-int a[n];
-    
-
-    // Input elements of the array
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
-
-    // Print the array in reverse order
-    printf("Array in reverse order:\n");
-    for (int i = n - 1; i >= 0; i--) {
-        printf("%d ", a[i]);
-    }
-
-    return 0;
+#include<stdio.h>
+int f(int n)
+{
+	if(n!=0)
+	return n*f(n-1);
+	else 
+	return 1;
+}
+int main ()
+{
+	int n;
+	printf("Enter a Number: ");
+	scanf("%d",&n);
+	printf("factorial of %d is %d\n",n,f(n));
+	return 0;
 }
